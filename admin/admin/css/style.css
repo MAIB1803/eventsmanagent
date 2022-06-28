@@ -1,0 +1,252 @@
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f118;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.288);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.356);
+
+}
+
+.grid-15-85 {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar sidebody";
+}
+
+.grid-15-85.grid-15-85-change {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: " sidebody";
+}
+
+.sidebar {
+    background-color: var(--b);
+    grid-area: sidebar;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.adminflex-row {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+}
+
+.adminflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.adminlogo1 {
+    width: 30px;
+    height: 30px;
+}
+
+.adminlogo {
+    width: 50px;
+    height: 50px;
+}
+
+.adminlogo>img,
+.adminlogo1>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle-g {
+    background-color: green;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    content: " ";
+}
+
+.sidebody.sidebody-change {
+    grid-area: sidebody;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(196, 196, 209);
+}
+
+.sidebody {
+    overflow-y: auto;
+    grid-area: sidebody;
+    position: fixed;
+    width: 85%;
+    left: 15%;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(196, 196, 209);
+}
+
+.topbar {
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(95, 77, 77);
+}
+
+.toogle-btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.toogle-btn>span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.btn-icon {
+    background-color: rgb(42, 151, 42);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.btn-icon:hover {
+    cursor: pointer;
+    background-color: rgb(31, 145, 31);
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.topbar-group {
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    align-items: center;
+}
+
+.form {
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgb(155, 155, 158);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-content: center;
+}
+
+.input {
+    padding: 10px;
+    background-color: rgb(238, 225, 225);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: rgb(45, 131, 45);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.sidebody-contents {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebody-contents1 {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    align-items: flex-start;
+    overflow-x: scroll;
+}
+
+.table {
+
+    background-color: white;
+}
+
+.timg {
+    width: 100px;
+}
+
+.timg>img {
+    width: 100%;
+}
+
+.tdroprow {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tdroprow:hover .tdrop-down {
+    display: flex;
+
+}
+
+.tdrop-down {
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+    background-color: rgb(221, 224, 230);
+    box-shadow: 1px 1p 5px rgb(119, 104, 104);
+}
+
+.tdrop-down-row {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tdrop-down-row:hover {
+    background-color: rgb(161, 148, 148);
+}
+
+.number-cards {
+    display: table;
+
+    background-color: rgb(255, 0, 128);
+}
